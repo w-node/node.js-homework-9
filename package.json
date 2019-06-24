@@ -1,0 +1,41 @@
+{
+  "name": "homework-lesson-9",
+  "version": "1.0.0",
+  "description": "CRUD for mongodb",
+  "main": "server.js",
+  "nodemonConfig": {
+    "ignore": [
+      "users.json",
+      "static/*",
+      "data/*"
+    ]
+  },
+  "scripts": {
+    "postinstall": "node initDb.js",
+    "start": "node server.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
+    "debug": "cross-env NODE_ENV=development DEBUG=homework:* nodemon server.js",
+    "inspect": "node --inspect server.js"
+  },
+  "author": "Alexander Uspensky",
+  "license": "ISC",
+  "dependencies": {
+    "async-busboy": "^0.7.0",
+    "bootstrap": "^4.3.1",
+    "config": "^3.1.0",
+    "cross-env": "^5.2.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-response-time": "^2.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "moment": "^2.24.0",
+    "mongodb": "^3.2.7",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "debug": "^4.1.1",
+    "nodemon": "^1.19.1"
+  }
+}

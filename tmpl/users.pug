@@ -1,0 +1,14 @@
+mixin users(userId, userName, className)
+    li(class=className)
+        div
+            span= userName
+            span
+                a(href="/edit/" + userId) редактировать
+            span
+                a(href="/delete/" + userId) удалить
+
+h4 Список пользователей
+
+ul.list#list
+    each val, index in users
+        +users(val._id, '#' + Object.values(val).join(" / "))

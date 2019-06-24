@@ -1,0 +1,27 @@
+form(action='/upsert' method='POST' enctype='multipart/form-data')
+    div(class="container")
+        div(class="row")
+            div(class="col-sm")
+                div(class="form-group")
+                    label ID
+                    input(type="text" name="_id" class="form-control" value=user && user._id)
+            div(class="col-sm")
+                div(class="form-group")
+                    label ИМЯ
+                    input(type="text" name="name" class="form-control" value=user && user.name)
+        div(class="row")
+            div(class="col-sm")
+                div(class="form-group")
+                    label ФАМИЛИЯ
+                    input(type="text" name="surname" class="form-control" value=user && user.surname)
+            div(class="col-sm")
+                label ФОТО
+                input(type="file" name="foto" value=user && user.foto)
+                if user && user.foto
+                    img(src='/data/' + user.foto height="50" width="50")
+                else
+                    span НЕТ ФОТО
+        div(class="row")
+            div(class="col-sm")
+                button(type="submit") ОТПРАВИТЬ
+

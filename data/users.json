@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "3",
+    "name": "Ivan",
+    "surname": "Fedin",
+    "foto": "3_pic.jpeg"
+  },
+  {
+    "_id": "1",
+    "name": "Vasya",
+    "surname": "Ivanov",
+    "foto": "1_pic.jpeg"
+  },
+  {
+    "_id": "4",
+    "name": "test",
+    "surname": "test2",
+    "foto": "4_aple.jpg"
+  },
+  {
+    "_id": "2",
+    "name": "Petya",
+    "surname": "Vasin",
+    "foto": "2_aple.jpg"
+  }
+]

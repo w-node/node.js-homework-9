@@ -1,0 +1,31 @@
+body {
+    padding: 10px;
+    background-color: honeydew;
+}
+.form-control {
+    width: 10em;
+    display: inline;
+    margin-left: 1em;
+    height: 30px;
+}
+.form-group {
+    width: 80%;
+    margin-left: 1em;
+    display: inline;
+}
+.row {
+    text-align: right;
+    width: 100%;
+}
+.container {
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+span {
+    margin-left: 10px;
+}
+form {
+    border: 1px solid green;
+}
